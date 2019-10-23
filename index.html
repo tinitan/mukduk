@@ -29,6 +29,78 @@
     border-radius: 5px;
  
 }
+
+.imagemain  {
+
+    width: 95%; 
+    height:300px;
+    overflow: hidden;
+    
+    background-image:url(images/muk1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5%px;
+    margin-left: 2%;
+   
+}
+
+/* 벌의 비행 */   
+.bee {max-width:100%px; margin:0 auto; position:relative;}
+.bee {
+  margin-top:0px; margin-left:0px; /* 날아다니는 위치 조정 */
+  width: 23px; height: 30px; /* 새담는*/
+ 
+      /*-webkit-transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      -webkit-animation-delay: -2s!important;
+      -webkit-transform:scale(0.8);  
+      -webkit-animation-name: movingPara;
+      -webkit-animation-duration: 6s;
+      -webkit-animation-iteration-count: infinite;
+
+      /*transition: 0.3s;  /* cubic-bezier(0,.43,1,0); /*captured 포시 */
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      animation-delay: -2s!important;
+      transform:scale(0.8);
+      animation-name: movingPara;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    
+    @-webkit-keyframes movingPara {
+      
+    0% { margin-left :20%; margin-top: 0%; } 
+      10%{  margin-left :50%; margin-top: 5%;}
+      20%{  margin-left :50%; margin-top: 0%;}
+      30% {  margin-left : 30%; margin-top: 10%;}
+      40% {  margin-left : 30%; margin-top: 5%;}
+      50% {   margin-left: 20%;margin-top: 0%; }
+      60% {  margin-left: 50%;margin-top: 5%; }
+      80% {  margin-left: 20%;margin-top: 10%;  }
+      90% {  margin-left: 40%;margin-top: 5%;  }
+      95% {  margin-left: 50%; margin-top: 0%; }
+      100% {   margin-left: 70%;margin-top: 5%; }
+      
+    }
+    
+    @keyframes movingPara {
+
+      0% { margin-left :20%; margin-top: 0%; } 
+      10%{  margin-left :50%; margin-top: 5%;}
+      20%{  margin-left :50%; margin-top: 0%;}
+      30% {  margin-left : 30%; margin-top: 10%;}
+      40% {  margin-left : 30%; margin-top: 5%;}
+      50% {   margin-left: 20%;margin-top: 0%; }
+      60% {  margin-left: 50%;margin-top: 5%; }
+      80% {  margin-left: 20%;margin-top: 10%;  }
+      90% {  margin-left: 40%;margin-top: 5%;  }
+      95% {  margin-left: 50%; margin-top: 0%; }
+      100% {   margin-left: 70%;margin-top: 5%; }
+      
+    }
     </style>
     
   </head>
@@ -51,7 +123,11 @@
  <!-- 추가 -->
  <span><br></span>
  <span><br></span> 
-    <img src="images/muk1.jpg" alt="" /> 
+ <div>
+ <div class="imagemain"><div class="bee"><IMG src="bee.png"></div></div>
+ 
+ </div>
+  <!--  <img src="images/muk1.jpg" alt="" /> -->
   <h3><span>자연의 음식 도토리로 건강한 식생할을...</span></h3>   
 <span><br></span>
  
